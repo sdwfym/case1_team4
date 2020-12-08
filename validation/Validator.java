@@ -1,3 +1,5 @@
+package validation;
+
 import java.util.regex.Pattern;
 
 public class Validator {
@@ -58,7 +60,7 @@ public class Validator {
     };
 
     public static void main(String[] args){
-        boolean res1 = isValidDealerName("BURIEN-CHEVROLET Inc.");
+        boolean res1 = isValidDealerName("gmps-aj-dohmann");
         System.out.println(res1);
         boolean res2 = isValidZipCode("98025");
         System.out.println(res2);
@@ -69,3 +71,4 @@ public class Validator {
     }
 
 }
+
