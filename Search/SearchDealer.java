@@ -1,4 +1,4 @@
-package search;
+package service;
 
 import dao.Dealer;
 import dto.DataPersistence;
@@ -8,8 +8,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;
 import java.util.stream.Collectors;
-
-import static java.lang.System.*;
 
 public class SearchDealer {
     public static final List<Dealer> ALL_DEALERS = new DataPersistence().getAllDealers();
@@ -81,19 +79,12 @@ public class SearchDealer {
     public static List<Dealer> searchByName(String dealerName) {
         List<Dealer> dealerList = new ArrayList<>();
 
-//        try (BufferedReader reader = new BufferedReader(new InputStreamReader(in))){
-//            String input = reader.readLine();
             for(Dealer dealers: ALL_DEALERS){
                 if(dealers.getDealerName().contains(dealerName)){
                     dealerList.add(dealers);
                 }
              }
 
-//        }catch (UnsupportedEncodingException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
 
         return dealerList;
 
