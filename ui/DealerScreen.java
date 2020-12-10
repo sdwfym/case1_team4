@@ -88,7 +88,7 @@ public class DealerScreen {
 
     // initializing dealer's name
     private void dealerName() {
-        JLabel lblName = new JLabel("Search by Dealers Name: ");
+        JLabel lblName = new JLabel("Dealers Name is Optional: ");
         lblName.setBounds(10, 50, 200, 14);
         lblName.setForeground(Color.WHITE);
         panelLeft.add(lblName);
@@ -148,7 +148,7 @@ public class DealerScreen {
 
     // handling zip code
     private void zipCode() {
-        JLabel lblPhone = new JLabel("Search by Zipcode: ");
+        JLabel lblPhone = new JLabel("Zipcode is Required: ");
         lblPhone.setBounds(10, 190, 270, 14);
         lblPhone.setForeground(Color.WHITE);
         panelLeft.add(lblPhone);
